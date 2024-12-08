@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1-alpha.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "devDependencies": {
+    "@textlint/types": "^14.3.0",
+    "@types/node": "^20.17.5",
+    "textlint-scripts": "^14.3.0",
+    "textlint-tester": "^14.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "name": "@horihiro/textlint-rule-azure-naming-convention",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@horihiro/textlint-plugin-bicep": "^0.0.1-alpha.0"
+  }
+}
